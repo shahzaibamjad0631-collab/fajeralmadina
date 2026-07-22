@@ -104,10 +104,11 @@ nav{
 .nav-item.open .dropdown-toggle .chev{transform:rotate(-135deg);margin-top:3px;}
 
 .mega-panel{
-  /* positioned relative to <nav> (the containing block), so it always centers
-     on the full nav bar instead of the individual toggle link — this keeps it
-     within the viewport regardless of where "All Categories" sits in the row */
-  position:absolute;top:calc(100% + 16px);left:50%;
+  /* position:fixed anchors to the viewport itself (not the toggle link's own
+     box), so it always centers on screen and can never overflow left/right
+     regardless of where "All Categories" sits in the nav row. top is the
+     measured header height (~75px) plus a 16px gap. */
+  position:fixed;top:91px;left:50%;
   transform:translate(-50%,8px);
   background:#fff;
   border-radius:18px;
