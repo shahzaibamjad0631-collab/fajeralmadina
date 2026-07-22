@@ -66,6 +66,7 @@ header.scrolled{box-shadow:0 8px 30px -18px rgba(15,42,61,0.3);}
 nav{
   display:flex;align-items:center;justify-content:space-between;
   padding:14px 28px;max-width:1180px;margin:0 auto;
+  position:relative;
 }
 .brand{display:flex;align-items:center;gap:11px;}
 .brand img{height:42px;width:auto;}
@@ -97,12 +98,15 @@ nav{
 }
 
 /* ---------- ALL-CATEGORIES MEGA MENU: premium corporate grid ---------- */
-.nav-item{position:relative;}
+.nav-item{position:static;}
 .dropdown-toggle{display:flex;align-items:center;gap:6px;padding:6px 0;}
 .dropdown-toggle .chev{width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:transform .25s ease;flex-shrink:0;}
 .nav-item.open .dropdown-toggle .chev{transform:rotate(-135deg);margin-top:3px;}
 
 .mega-panel{
+  /* positioned relative to <nav> (the containing block), so it always centers
+     on the full nav bar instead of the individual toggle link — this keeps it
+     within the viewport regardless of where "All Categories" sits in the row */
   position:absolute;top:calc(100% + 16px);left:50%;
   transform:translate(-50%,8px);
   background:#fff;
@@ -120,7 +124,7 @@ nav{
   box-sizing:border-box;
   opacity:0;visibility:hidden;
   transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
-  z-index:150;
+  z-index:260;
 }
 @media(min-width:1024px){
   .nav-item:hover .mega-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
