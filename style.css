@@ -540,14 +540,7 @@ section{padding:104px 0;}
   font-family:'Poppins',sans-serif;font-size:13.5px;font-weight:700;color:#fff;
   position:relative;z-index:1;
 }
-.stationery-item.s1{background-image:url('https://images.unsplash.com/photo-1622223373286-4db475b3b9a7?fm=jpg&q=70&w=700&auto=format&fit=crop');}
 .stationery-item.s2{background-image:url('https://images.unsplash.com/photo-1695634621375-0b66a9d5d1bc?fm=jpg&q=70&w=700&auto=format&fit=crop');}
-.stationery-item.s3{background-image:url('https://images.unsplash.com/photo-1718670013921-2f144aba173a?fm=jpg&q=70&w=700&auto=format&fit=crop');}
-.stationery-item.s4{background-image:url('https://images.unsplash.com/photo-1619418602850-35ad20aa1700?fm=jpg&q=70&w=700&auto=format&fit=crop');}
-.stationery-item.s5{background-image:url('https://images.unsplash.com/photo-1545941962-1b6654eb8072?fm=jpg&q=70&w=700&auto=format&fit=crop');}
-.stationery-item.s6{background:linear-gradient(135deg,var(--navy) 0%, var(--navy-soft) 55%, var(--blue) 130%);}
-.stationery-item.s7{background:linear-gradient(135deg,var(--blue) 0%, var(--blue-light) 100%);}
-.stationery-item.s8{background:linear-gradient(135deg,var(--green) 0%, var(--green-light) 100%);}
 .stationery-item .tile-icon{position:absolute;top:14px;right:14px;font-size:24px;opacity:0.9;z-index:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.25));}
 .stationery-item::after{
   content:"";position:absolute;top:0;left:-60%;width:35%;height:100%;
@@ -555,6 +548,31 @@ section{padding:104px 0;}
   transform:skewX(-20deg);transition:left .7s ease;z-index:2;pointer-events:none;
 }
 .stationery-item:hover::after{left:135%;}
+
+/* ---------- STATIONERY: real product mockups (framed style) ---------- */
+.stationery-item.mock{
+  background:#fff;border:1px solid rgba(15,42,61,0.1);
+  flex-direction:column;align-items:stretch;justify-content:flex-start;padding:0;
+}
+.stationery-item.mock::before{display:none;}
+.stationery-item.mock .tile-media{
+  flex:1;background:#F4F7F8;display:flex;align-items:center;justify-content:center;
+  padding:16px;overflow:hidden;
+}
+.stationery-item.mock .tile-media img{
+  max-width:100%;max-height:100%;object-fit:contain;
+  filter:drop-shadow(0 8px 16px rgba(15,42,61,0.14));
+}
+.stationery-item.mock .tile-label{
+  display:flex;align-items:center;gap:8px;padding:12px 14px;
+  border-top:1px solid rgba(15,42,61,0.08);position:relative;z-index:1;
+}
+.stationery-item.mock .tile-label .tile-icon{
+  position:static;font-size:16px;opacity:1;filter:none;
+}
+.stationery-item.mock .tile-label span:last-child{
+  color:var(--navy);font-size:13px;font-weight:700;
+}
 
 /* ---------- CUSTOM CURSOR ---------- */
 body.has-cursor, body.has-cursor a, body.has-cursor button, body.has-cursor .btn{cursor:none;}
