@@ -3,68 +3,22 @@
     "slug": "marketing-printing",
     "label": "Marketing & Printing",
     "hero_title": "Marketing & Printing",
-    "hero_desc": "Everyday business printing and marketing materials \u2014 from stationery to event promotion pieces \u2014 produced in-house and priced fairly.",
+    "hero_desc": "Stationery, ID cards and corporate branding accessories \u2014 produced and branded in-house, priced fairly.",
     "subcats": [
       {
         "name": "Stationery & Corporate Branding",
-        "desc": "{item}, printed in-house with a fast turnaround.",
+        "desc": "{item}, produced and branded in-house with a fast turnaround.",
         "items": [
-          "Business Cards",
-          "Letterheads",
-          "Journals",
-          "Binding",
-          "Thank You Cards",
-          "Calendars",
-          "Hang Tags",
-          "Envelopes",
-          "Folders",
-          "Notepads"
-        ]
-      },
-      {
-        "name": "Brochures & Flyers",
-        "desc": "{item} designed and printed for your next campaign.",
-        "items": [
-          "Brochures",
-          "Flyers",
-          "Catalogs & Booklets"
-        ]
-      },
-      {
-        "name": "Stickers & Labels",
-        "desc": "{item} cut and finished to your exact specification.",
-        "items": [
-          "Die-Cut Stickers",
-          "Print & Cut Stickers",
-          "Gloss/Matte Stickers",
-          "Transparent Stickers",
-          "PVC Stickers",
-          "Epoxy Stickers",
-          "Windshield Stickers",
-          "Foil Stickers",
-          "Metal Stickers",
-          "Hologram Stickers",
-          "Kraft Paper Stickers"
-        ]
-      },
-      {
-        "name": "CD / DVD Services",
-        "desc": "{item} for corporate and promotional use.",
-        "items": [
-          "CD / DVD Printing",
-          "CD / DVD Covers"
-        ]
-      },
-      {
-        "name": "Crowd & Event Promotion",
-        "desc": "{item} produced for events, retail counters and promotions.",
-        "items": [
-          "Tent Cards",
-          "Car Mats",
-          "Table Mats",
-          "Compliment Slips",
-          "Tickets & Coupons",
-          "Scratch & Win Coupons"
+          "ID Cards & Lanyards",
+          "Notebook & Pen Gift Sets",
+          "Branded Pens",
+          "Keychains",
+          "Lanyards",
+          "Branded Mugs",
+          "Badge Reels",
+          "Silicone Wristbands",
+          "ID Card Holders",
+          "Corporate Caps"
         ]
       }
     ]
