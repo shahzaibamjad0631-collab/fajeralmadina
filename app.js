@@ -83,23 +83,25 @@ function animateCounters(){
 const heroSection = document.querySelector('.hero');
 const heroGlow = document.getElementById('heroGlow');
 const heroSplit = document.querySelector('.hero-split');
-heroSection.addEventListener('mousemove', (e) => {
-  const r = heroSection.getBoundingClientRect();
-  const x = e.clientX - r.left, y = e.clientY - r.top;
-  gsap.to(heroGlow, { x, y, opacity: 1, duration: 0.6, ease: 'power2.out' });
-  gsap.to('.hero-card', {
-    rotateY: (x - r.width/2) / 40, rotateX: -(y - r.height/2) / 60,
-    duration: 0.6, ease: 'power2.out', transformPerspective: 800
+if (heroSection) {
+  heroSection.addEventListener('mousemove', (e) => {
+    const r = heroSection.getBoundingClientRect();
+    const x = e.clientX - r.left, y = e.clientY - r.top;
+    gsap.to(heroGlow, { x, y, opacity: 1, duration: 0.6, ease: 'power2.out' });
+    gsap.to('.hero-card', {
+      rotateY: (x - r.width/2) / 40, rotateX: -(y - r.height/2) / 60,
+      duration: 0.6, ease: 'power2.out', transformPerspective: 800
+    });
   });
-});
-heroSection.addEventListener('mouseleave', () => {
-  gsap.to(heroGlow, { opacity: 0, duration: 0.4 });
-  gsap.to('.hero-card', { rotateY: 0, rotateX: 0, duration: 0.6 });
-});
-gsap.to(heroSplit, {
-  y: 120, ease: 'none',
-  scrollTrigger: { trigger: heroSection, start: 'top top', end: 'bottom top', scrub: 0.6 }
-});
+  heroSection.addEventListener('mouseleave', () => {
+    gsap.to(heroGlow, { opacity: 0, duration: 0.4 });
+    gsap.to('.hero-card', { rotateY: 0, rotateX: 0, duration: 0.6 });
+  });
+  gsap.to(heroSplit, {
+    y: 120, ease: 'none',
+    scrollTrigger: { trigger: heroSection, start: 'top top', end: 'bottom top', scrub: 0.6 }
+  });
+}
 
 /* ---------------- MAGNETIC BUTTONS ---------------- */
 document.querySelectorAll('.magnetic').forEach(wrap => {
