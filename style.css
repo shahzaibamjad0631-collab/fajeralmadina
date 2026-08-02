@@ -416,12 +416,9 @@ section{padding:104px 0;}
 }
 .port-item::before{content:"";position:absolute;inset:0;opacity:1;
   background:linear-gradient(180deg,rgba(15,42,61,0.05) 0%,rgba(15,42,61,0.15) 55%,rgba(15,42,61,0.88) 100%);}
-.port-item.n1{background-image:url('https://images.unsplash.com/photo-1755435900778-aa6949ed2ce5?fm=jpg&q=70&w=900&auto=format&fit=crop');}
-.port-item.n2{background-image:url('https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?fm=jpg&q=70&w=900&auto=format&fit=crop');}
-.port-item.n3{background-image:url('https://images.unsplash.com/photo-1503694978374-8a2fa686963a?fm=jpg&q=70&w=900&auto=format&fit=crop');}
-.port-item.n4{background-image:url('https://images.unsplash.com/photo-1517492973030-a02d282206f7?fm=jpg&q=70&w=900&auto=format&fit=crop');}
-.port-item.n5{background-image:url('https://images.unsplash.com/photo-1693031630369-bd429a57f115?fm=jpg&q=70&w=900&auto=format&fit=crop');}
-.port-item.n6{background-image:url('https://images.unsplash.com/photo-1716703373229-b0e43de7dd5c?fm=jpg&q=70&w=900&auto=format&fit=crop');}
+.port-item.n1{background-image:url('assets/portfolio/elegance-signage.jpg');}
+.port-item.n2{background-image:url('assets/portfolio/fitout-kitchen.jpg');}
+.port-item.n3{background-image:url('assets/portfolio/printing-press.jpg');}
 .port-note{
   margin-top:22px;font-size:13px;color:#8FA5B5;font-style:italic;
 }
