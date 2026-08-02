@@ -19,8 +19,11 @@ def wa_link(text):
     msg = f"Hi Fajer Al Madina, I'm interested in {text}. Please share details and pricing."
     return "https://wa.me/{}?text={}".format(PHONE, urllib.parse.quote(msg))
 
-def img_url(photo_id, w=800, h=600):
-    return f"https://images.unsplash.com/{photo_id}?auto=format&fit=crop&w={w}&h={h}&q=80"
+def img_url(photo_id, w=800, h=600, base=""):
+    if photo_id.startswith("photo-"):
+        return f"https://images.unsplash.com/{photo_id}?auto=format&fit=crop&w={w}&h={h}&q=80"
+    # local real-photo path (e.g. "assets/stationery-corp/pens.jpg") - base-relative for subfolder pages
+    return f"{base}{photo_id}"
 
 def subcat_images(subcat_name):
     return IMAGES.get(subcat_name, ["photo-1521791136064-7986c2920216"])
@@ -213,7 +216,7 @@ def build_category_page(cat):
       </a>''')
         cards_html = "\n".join(cards)
         subcat_blocks.append(f'''    <div class="subcat-block" id="{sub_id}">
-      <div class="subcat-strip"><img src="{img_url(imgs[0],1200,450)}" alt="{s["name"]}" loading="lazy"></div>
+      <div class="subcat-strip"><img src="{img_url(imgs[-1],1200,450)}" alt="{s["name"]}" loading="lazy"></div>
       <div class="subcat-head reveal">
         <h2>{s["name"]}</h2>
         <span>{len(s["items"])} items</span>
@@ -362,7 +365,7 @@ def build_product_page(cat, subcat, item):
         r_idx = r_sub["items"].index(r_item)
         r_photo = r_imgs[r_idx % len(r_imgs)]
         rel_cards.append(f'''      <a href="{r_slug}.html" class="prod-card reveal">
-        <div class="prod-thumb"><img src="{img_url(r_photo,500,375)}" alt="{r_item}" loading="lazy"></div>
+        <div class="prod-thumb"><img src="{img_url(r_photo,500,375,base)}" alt="{r_item}" loading="lazy"></div>
         <div class="prod-body">
           <h4>{r_item}</h4>
           <p>{r_sub["desc"].format(item=r_item)}</p>
@@ -399,7 +402,7 @@ def build_product_page(cat, subcat, item):
   <div class="wrap">
     <div class="product-layout">
       <div class="product-media reveal">
-        <img src="{img_url(photo,900,675)}" alt="{item}">
+        <img src="{img_url(photo,900,675,base)}" alt="{item}">
       </div>
       <div class="product-info reveal">
         <div class="p-eyebrow">{subcat["name"]}</div>
