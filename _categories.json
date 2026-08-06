@@ -136,7 +136,7 @@
     "slug": "flags",
     "label": "Flags",
     "hero_title": "Flags",
-    "hero_desc": "Branded, national and outdoor flags for events, storefronts and promotions, with poles, bases and accessories for indoor or outdoor use.",
+    "hero_desc": "Branded and outdoor flags for events, storefronts and promotions, with bases suited to indoor or outdoor use.",
     "subcats": [
       {
         "name": "Event & Branding Flags",
@@ -147,10 +147,7 @@
           "L Shape Flags",
           "Blade Flags",
           "Telescopic Flags",
-          "Advertising Flags",
-          "Feather Flags",
-          "Beach Flags",
-          "Pennant Bunting Flags"
+          "Advertising Flags"
         ]
       },
       {
@@ -159,8 +156,7 @@
         "items": [
           "Concrete Base",
           "Cross Base",
-          "Water Base",
-          "Ground Spike Base"
+          "Water Base"
         ]
       },
       {
@@ -171,26 +167,6 @@
           "Hoisting Flags",
           "Wall-Mounted Flags",
           "Stadium Flags"
-        ]
-      },
-      {
-        "name": "National & Desk Flags",
-        "desc": "{item} for offices, ceremonies and national occasions.",
-        "items": [
-          "UAE Flags",
-          "Country Flags",
-          "Desk & Table Flags",
-          "Car Flags",
-          "Hand-Waving Flags"
-        ]
-      },
-      {
-        "name": "Flag Poles & Accessories",
-        "desc": "{item} for professional flag installation and display.",
-        "items": [
-          "Flag Poles",
-          "Pulley & Rope Systems",
-          "Flag Clips & Rings"
         ]
       }
     ]
