@@ -3,7 +3,7 @@
     "slug": "marketing-printing",
     "label": "Marketing & Printing",
     "hero_title": "Marketing & Printing",
-    "hero_desc": "Stationery, ID cards and corporate branding accessories \u2014 produced and branded in-house, priced fairly.",
+    "hero_desc": "Stationery, ID cards and corporate branding accessories — produced and branded in-house, priced fairly.",
     "subcats": [
       {
         "name": "Stationery & Corporate Branding",
@@ -61,7 +61,7 @@
       },
       {
         "name": "Static Cling",
-        "desc": "{item} \u2014 adhesive-free and easy to reposition.",
+        "desc": "{item} — adhesive-free and easy to reposition.",
         "items": [
           "Shape Cut Cling",
           "Car Branding",
@@ -103,7 +103,7 @@
     "slug": "displays-event-backdrops",
     "label": "Displays & Event Backdrops",
     "hero_title": "Displays & Event Backdrops",
-    "hero_desc": "Backdrops and standees for exhibitions, launches and events \u2014 built for repeated use and easy setup.",
+    "hero_desc": "Backdrops and standees for exhibitions, launches and events — built for repeated use and easy setup.",
     "subcats": [
       {
         "name": "Backdrops",
@@ -175,7 +175,7 @@
     "slug": "signages",
     "label": "Signages",
     "hero_title": "Signages",
-    "hero_desc": "Illuminated, tabletop and safety signage \u2014 designed, fabricated and installed by our own team.",
+    "hero_desc": "Illuminated, tabletop and safety signage — designed, fabricated and installed by our own team.",
     "subcats": [
       {
         "name": "Name Plates",
@@ -216,50 +216,6 @@
           "Flex Face Signage",
           "Frontlit Signage",
           "Push-Through Signage"
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "textile-apparel",
-    "label": "Textile & Apparel",
-    "hero_title": "Textile & Apparel",
-    "hero_desc": "Branded clothing, soft furnishing and fashion accessories printed or embroidered with your logo.",
-    "subcats": [
-      {
-        "name": "Clothing & Apparel",
-        "desc": "{item} branded with your logo or design.",
-        "items": [
-          "Silicone Labels",
-          "T-Shirts",
-          "Jerseys",
-          "Caps",
-          "Neck Ties",
-          "Safety Vests",
-          "Embroidery Patches"
-        ]
-      },
-      {
-        "name": "Soft Furnishing",
-        "desc": "{item} custom-made and branded to order.",
-        "items": [
-          "Decorative Pillows",
-          "Floor Cushions",
-          "Tiny Cushions",
-          "Bolster Pillows",
-          "Bean Bags",
-          "Blankets",
-          "Fabric Wraps"
-        ]
-      },
-      {
-        "name": "Fashion Accessories",
-        "desc": "{item} printed or embroidered with your branding.",
-        "items": [
-          "Pouches",
-          "Tote Bags",
-          "Beach Shorts",
-          "Pocket Handkerchiefs"
         ]
       }
     ]
