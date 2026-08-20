@@ -65,7 +65,6 @@
         "items": [
           "Shape Cut Cling",
           "Car Branding",
-          "Boat/Yacht Branding",
           "Repositionable Cling",
           "Static Cling"
         ]
@@ -92,7 +91,6 @@
         "name": "Display Stands",
         "desc": "{item} built for retail floors and showrooms.",
         "items": [
-          "Floor Display Gondola",
           "3D Display Stand",
           "Counter Top Stands"
         ]
@@ -109,7 +107,6 @@
         "name": "Backdrops",
         "desc": "{item} fabricated for exhibitions and events.",
         "items": [
-          "LED Screen Displays",
           "Curved Backdrops",
           "Step & Repeat Backdrops",
           "Wooden Backdrops",
@@ -230,7 +227,6 @@
         "name": "Drinkware",
         "desc": "{item} printed with your logo for gifting or resale.",
         "items": [
-          "Coffee Stencils",
           "Mugs",
           "Bottles",
           "Tumblers",
